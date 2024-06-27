@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       <div>
+        <p>Counter App</p>
         <h3>count:{count}</h3>
         <button onClick={handleIncrement}>Increment</button>
         <button onClick={handleDecrement}>Decrement</button>
