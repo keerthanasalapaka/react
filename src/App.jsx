@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Paragraph from "./components/Paragraph/Paragraph";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,9 @@ function App() {
       return count - 1;
     });
   };
+  let result =
+    " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nulla quia tenetur asperiores voluptatem sequi. Suscipit quas nam eius quos.";
+
   return (
     <>
       <div>
@@ -22,6 +26,7 @@ function App() {
         <h3>count:{count}</h3>
         <button onClick={handleIncrement}>Increment</button>
         <button onClick={handleDecrement}>Decrement</button>
+        <Paragraph data={result} />
       </div>
     </>
   );
